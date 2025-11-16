@@ -1,3 +1,10 @@
+
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.30;
+
+
+
 contract VisibilityDemo {
     // 公共函数（合约内外均可调用）
     function publicFunc() public pure returns (string memory) {
@@ -42,7 +49,7 @@ contract Other {
     constructor() {
         visi = new VisibilityDemo();
     }
-    function call() public returns(string memory){
+    function call() public view returns(string memory){
         return visi.externalFunc();
     }
 }

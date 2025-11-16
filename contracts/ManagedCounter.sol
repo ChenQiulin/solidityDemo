@@ -1,3 +1,8 @@
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.30;
+
+
 contract ManagedCounter {
     // 状态变量
     uint private count;

@@ -1,3 +1,10 @@
+
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.30;
+
+
+
 contract ModifierDemo {
     address public owner;
     uint public minAmount = 1 ether;
